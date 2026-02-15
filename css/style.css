@@ -1,0 +1,111 @@
+body {
+    background-color: white;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+}
+
+.head-line {
+    a {
+        background-color: darkblue;
+        color: white;
+        /* padding: 100px 10px 10px 10px; */
+        padding: 10px 100px 10px 10px;
+        /* padding: 10px 10px 100px 10px; */
+        /* padding: 10px 10px 10px 100px; */
+
+        /* margin: 100px 10px 10px 10px; */
+        /* margin: 10px 100px 10px 10px; */
+        /* margin: 10px 10px 100px 10px; */
+        margin: 10px 10px 10px 65px;
+        /* margin: 10px; */
+        text-align: center;
+    }
+}
+
+.name {
+    font-size: 40px;
+}
+
+.description {
+    font-weight: 100;
+}
+
+menu {
+    background-color: white;
+    color: black;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    border-collapse: collapse;
+    a {
+        color: darkblue;
+    }
+}
+
+.contact-submition {
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    width: 25%;
+}
+
+.contact-buttons {
+    padding: 10px;
+    margin: 10px;
+}
+
+.submit {
+    background-color: green;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    margin: 5px 10px 5px 10px;
+    border: transparent;
+    border-radius: 10px;
+}
+
+.reset {
+    background-color: red;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    margin: 5px 10px 5px 10px;
+    border: transparent;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.contact {
+    color: white;
+}
+
+label {
+    text-align: left;
+    
+}
+
+.contact {
+    a {
+        color: white;
+    }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}

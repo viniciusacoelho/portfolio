@@ -5,13 +5,37 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vinícius Araújo Coêlho | Portfólio</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="shortcut icon" href="images/site-logo.ico" type="image/x-icon">
     </head>
 
     <body>
         <header>
+            <div class="head-line">
+                <!-- <button> -->
+                    <a class="teste" href="#sobre">Sobre</a>
+                <!-- </button> -->
+                <!-- <button> -->
+                    <a href="#habilidades">Habilidades</a>
+                <!-- </button>
+                <button> -->
+                    <a href="#cursos">Cursos</a>
+                <!-- </button>
+                <button> -->
+                    <a href="#projetos">Projetos</a>
+                <!-- </button>
+                <button> -->
+                    <a href="#formacao">Formação</a>
+                <!-- </button>
+                <button> -->
+                    <a href="#contato">Contato</a>
+                <!-- </button> -->
+            </div>
+            <br>
+            <br>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfGupU07f7Z6f6CAUYgBcR9Bx_-u4x2XN6fg&s" title="Vinícius Araújo Coêlho" width="100" height="100">
-            <p>Vinícius Araújo Coêlho | Estudante de Sistemas de Informação</p>
-            <p>
+            <p class="name">Vinícius Araújo Coêlho | Estudante de Sistemas de Informação</p>
+            <p class="description">
                 Este site tem como objetivo apresentar minha trajetória acadêmica, conhecimentos técnicos e projetos desenvolvidos 
                 durante meus estudos em tecnologia.
             </p>  
@@ -19,8 +43,8 @@
         </header>
 
         <menu>
-            <section>
-                <h2>Sobre Mim</h2>
+            <section id="sobre">
+                <h1>Sobre Mim</h1   >
                     <p>
                         Olá! Meu nome é Vinícius e sou estudante de Sistemas de Informação, com foco em desenvolvimento <i>back-end</i> e 
                         <br>
@@ -41,7 +65,7 @@
                     </p>
             </section>
 
-            <section>
+            <section id="habilidades">
                 <h2>Habilidades e Tecnologias</h2>
                 <p>Ao longo da graduação e dos estudos complementares, venho trabalhando com as seguintes tecnologias:</p>
                 <ol>
@@ -65,7 +89,7 @@
                 <hr>
             </section>
 
-            <section>
+            <section id="cursos">
                 <h2>Cursos e Certificações</h2>
                 <ol>
                     <ul>
@@ -82,7 +106,7 @@
                             <b>Java</b> e esteja preparado para o desenvolvimento de projetos mais robustos usando o <b>Spring Framework</b>.
                         </p>
                         <div>
-                            <table border="1">
+                            <table>
                                 <tr>
                                     <th>Formação Java Developer</th>
                                     <th>Credencial</th>
@@ -110,7 +134,7 @@
                         <li><i>Oracle Database Design</i></li>
                         <p>Neste curso eu aprendi sobre o banco de dados <b>Oracle</b> e sobre regras de negócio.</p>
                         <div>
-                            <table border="1">
+                            <table>
                                 <tr>
                                     <th>Oracle Database Design</th>
                                 </tr>
@@ -142,7 +166,7 @@
                 <hr>
             </section>
 
-            <section>
+            <section id="projetos">
                 <h2>Meus Projetos</h2>
                 <p>Aqui estão alguns dos projetos que desenvolvi para praticar POO e lógica:</p>
                 <ul>
@@ -200,8 +224,8 @@
                 <hr>
             </section>
 
-            <section>
-                <h2>Formação</h2>
+            <section id="formacao">
+                <h2>Formação Acadêmica</h2>
                 <a href="https://www.cesmac.edu.br/graduacao/sistemas-de-informacao" title="Curso de Sistemas de Informação" target="_blank">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfGupU07f7Z6f6CAUYgBcR9Bx_-u4x2XN6fg&s" alt="Curso de Sistemas de Informação Imagem" width="100" height="100">
                 </a>
@@ -212,28 +236,39 @@
                 <hr>
             </section>
 
-            <section>
-                <h2>Contato</h2>
+            <section id="contato">
+                <h2 id="contato">Contato Profissional</h2>
                 <p>Caso deseje entrar em contato para oportunidades na área de desenvolvimento, parcerias ou networking, preencha o formulário abaixo.</p>
-                <form method="post">
-                    <label for="nome">Nome:</label>
-                    <br>
+                <form class="contact-submition" method="post">
+                    <h1>Contato</h1>
+                    <label for="nome">Nome:
+                        <br>
+                        <img class="person-icon" src="images/person-icon.svg" alt="Pessoa Ícone Imagem">
+                    </label>
                     <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
                     <br>
                     <br>
-                    <label for="email">E-mail:</label>
-                    <br>
+                    <label for="email">E-mail:
+                        <br>
+                        <img src="images/email-icon.svg" alt="E-mail Ícone Imagem">
+                    </label>
                     <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
                     <br>
                     <br>
-                    <label for="mensagem">Mensagem:</label>
-                    <br>
+                    <label for="mensagem">Mensagem:
+                        <br>
+                        <img src="images/message-icon.svg" alt="Mensagem ícone Imagem">
+                    </label>
                     <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Deixe uma mensagem"></textarea>
                     <br>
                     <br>
-                    <button type="submit">Enviar</button>
-                    <input type="reset" value="Limpar">
-                    <input type="checkbox" name="aceitar-dados" id="aceitar-dados"> Aceito que meus dados sejam utilizados apenas para contato profissional.
+                    <input type="checkbox" name="aceitar-dados" id="aceitar-dados">
+                    <label for="aceitar-dados">Aceito que meus dados sejam utilizados apenas para contato profissional.</label>
+                    <br>
+                    <div class="contact-buttons">
+                        <button class="submit" type="submit">Enviar</button>
+                        <input class="reset" type="reset" value="Limpar">
+                    </div>
                 </form>
             </section>
         </menu>
@@ -244,20 +279,19 @@
             <p>Conteúdo destinado à apresentação de estudos e projetos</p>
             <p>Copyright © 2026 Vinícius Araújo Coêlho</p>
             <p>Todos os direitos reservados</p>
-            <div>
+            <div class="contact">
                 <a href="https://www.linkedin.com/in/viniciusacoelho/" title="viniciusacoelho" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/960px-LinkedIn_logo_initials.png" alt="LinkedIn Imagem" title="LinkedIn" width="30" height="30">
-                    LinkedIn</a>
-                <br>
-                <br>
+                    <img src="images/linkedin-icon.svg" alt="LinkedIn Imagem" title="LinkedIn" width="30" height="30">LinkedIn
+                </a>
                 <a href="https://github.com/viniciusacoelho" title="viniciusacoelho" target="_blank">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmrGmeBv3SOLSKz6OlTVlVYkfH9_W3BBgdrA&s" alt="GitHub Imagem" title="GitHub" width="30">
-                    GitHub</a>
-                <br>
-                <br>
+                    <img src="images/github-icon.svg" alt="GitHub Imagem" title="GitHub" width="30" height="30">GitHub
+                </a>
                 <a href="https://www.instagram.com/viniciusacoelho_/" title="@viniciusacoelho_" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1280px-Instagram_icon.png" alt="Instagram Imagem" title="Instagram" width="30" height="30">
-                    Instagram</a>
+                    <img src="images/instagram-icon.svg" alt="Instagram Imagem" title="Instagram" width="30" height="30">Instagram
+                </a>
+                <a href="">
+                    <img src="images/gmail-icon.svg" alt="Gmail Imagem" width="30" height="30">viniciusaccoelho123@gmail.com
+                </a>
             </div>
         </footer>
     </body>
